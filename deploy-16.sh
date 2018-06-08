@@ -4,7 +4,6 @@ export DEBIAN_FRONTEND=noninteractive
 
 # Check if user is root
 [ $(id -u) != "0" ] && { echo "${CFAILURE}Error: You must be root to run this script${CEND}"; exit 1; }
-
 # Configure
 MYSQL_ROOT_PASSWORD="ljf3301"
 MYSQL_NORMAL_USER="my"
